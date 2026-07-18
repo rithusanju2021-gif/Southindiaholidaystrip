@@ -1,0 +1,32 @@
+<svg viewBox="0 0 620 140" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <linearGradient id="tierGoldEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E8B65A"/>
+      <stop offset="1" stop-color="#C88A2E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ============ ICON: sun + leaf mark ============ -->
+  <g>
+    <!-- sun -->
+    <circle cx="94" cy="42" r="20" fill="url(#tierGoldEdge)"/>
+
+    <!-- three fanning leaf/wing fronds rising from a shared base point -->
+    <g transform="translate(46,100)">
+      <path d="M0 0 C -26 -10, -34 -40, -18 -66 C 2 -46, 6 -20, 0 0 Z" fill="#4E1119"/>
+      <path d="M0 0 C -2 -32, 14 -58, 40 -68 C 38 -40, 22 -14, 0 0 Z" fill="#123F3D"/>
+      <path d="M0 0 C 14 -22, 12 -50, -6 -70 C -20 -48, -16 -20, 0 0 Z" fill="#C88A2E" opacity="0.92"/>
+    </g>
+  </g>
+
+  <!-- ============ WORDMARK ============ -->
+  <g transform="translate(150,0)">
+    <text x="0" y="66" font-family="Georgia, 'Marcellus', serif" font-size="40" fill="#4E1119">South India</text>
+    <text x="0" y="102" font-family="Georgia, 'Marcellus', serif" font-size="40" font-style="italic" fill="#C88A2E">Holidays<tspan fill="#1F6F6B" font-style="normal">Trip</tspan></text>
+
+    <!-- tagline -->
+    <text x="2" y="122" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" letter-spacing="3" fill="#123F3D">
+      SOUTH INDIA &#183; TOURS &amp; HOLIDAY SPECIALISTS
+    </text>
+  </g>
+</svg>
