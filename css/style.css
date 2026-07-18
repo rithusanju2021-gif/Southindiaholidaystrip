@@ -4,30 +4,31 @@
    ========================================================= */
 
 :root {
-  --primary: #2C3E6B;
-  --primary-dark: #1B2A4A;
-  --secondary: #1B2A4A;
-  --accent: #2C3E6B;
-  --highlight: #FB923C;
-  --luxury: #FBBF24;
+  /* Navy / Black / White / Sky-blue system — no off-palette accents */
+  --primary: #1B3A6B;
+  --primary-dark: #0B1D3A;
+  --secondary: #0B1D3A;
+  --accent: #0EA5E9;
+  --highlight: #38BDF8;
+  --luxury: #0284C7;
   --bg: #FFFFFF;
-  --bg-section: #F4F6FA;
+  --bg-section: #F2F6FB;
   --card-bg: rgba(255, 255, 255, 0.97);
-  --text: #0A0A0A;
-  --text-soft: #3A3A3A;
-  --border: rgba(10, 10, 10, 0.10);
-  --hover-glow: rgba(27, 42, 74, 0.22);
-  --glass: rgba(255, 255, 255, 0.82);
+  --text: #0A0E17;
+  --text-soft: #3C4657;
+  --border: rgba(11, 29, 58, 0.12);
+  --hover-glow: rgba(14, 165, 233, 0.24);
+  --glass: rgba(255, 255, 255, 0.84);
   --glass-border: rgba(255, 255, 255, 0.5);
 
   --display: "Poppins", "Segoe UI", sans-serif;
   --body: "Inter", "Segoe UI", sans-serif;
 
-  --radius: 0px;
-  --radius-sm: 0px;
+  --radius: 20px;
+  --radius-sm: 14px;
   --radius-pill: 999px;
-  --shadow: 0 20px 50px -20px rgba(10, 10, 10, 0.18);
-  --shadow-soft: 0 8px 30px -12px rgba(10, 10, 10, 0.14);
+  --shadow: 0 20px 50px -20px rgba(11, 29, 58, 0.20);
+  --shadow-soft: 0 8px 30px -12px rgba(11, 29, 58, 0.16);
   --shadow-glow: 0 0 40px var(--hover-glow);
 
   --container: 1200px;
@@ -198,13 +199,13 @@ button {
 }
 
 .btn-gold {
-  background: linear-gradient(135deg, var(--luxury), var(--highlight));
-  color: var(--text);
+  background: var(--luxury);
+  color: #fff;
 }
 
 .btn-gold:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 30px -10px rgba(251, 191, 36, 0.5);
+  box-shadow: 0 12px 30px -10px rgba(14, 165, 233, 0.5);
 }
 
 .btn-outline {
@@ -520,7 +521,7 @@ button {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(10, 10, 10, 0.6) 0%, rgba(27, 42, 74, 0.5) 50%, rgba(10, 10, 10, 0.55) 100%);
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.6) 0%, rgba(11, 29, 58, 0.5) 50%, rgba(10, 10, 10, 0.55) 100%);
   z-index: 1;
 }
 
@@ -798,7 +799,7 @@ section {
 .glass-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-glow);
-  border-color: rgba(27, 42, 74, 0.3);
+  border-color: rgba(11, 29, 58, 0.3);
 }
 
 .glass-card:hover::before {
@@ -812,8 +813,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(27, 42, 74, 0.12), rgba(44, 62, 107, 0.08));
-  border-radius: 0px;
+  background: linear-gradient(135deg, rgba(27, 58, 107, 0.12), rgba(14, 165, 233, 0.10));
+  border-radius: 16px;
   font-size: 1.8rem;
   transition: transform 0.4s ease;
 }
@@ -906,7 +907,7 @@ section {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--primary-dark);
-  background: rgba(27, 42, 74, 0.1);
+  background: rgba(11, 29, 58, 0.1);
   padding: 5px 12px;
   border-radius: var(--radius-pill);
   margin-bottom: 12px;
@@ -979,8 +980,8 @@ section {
   position: absolute;
   top: 16px;
   right: 16px;
-  background: linear-gradient(135deg, var(--luxury), var(--highlight));
-  color: var(--text);
+  background: var(--luxury);
+  color: #fff;
   font-weight: 700;
   font-size: 0.85rem;
   padding: 8px 16px;
@@ -1065,7 +1066,7 @@ section {
   }
 
   50% {
-    box-shadow: var(--shadow), 0 0 0 4px rgba(251, 191, 36, 0.15);
+    box-shadow: var(--shadow), 0 0 0 4px rgba(14, 165, 233, 0.15);
   }
 }
 
@@ -1121,7 +1122,7 @@ section {
 .page-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(10, 10, 10, 0.65), rgba(27, 42, 74, 0.5));
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.65), rgba(11, 29, 58, 0.5));
   z-index: 1;
 }
 
@@ -1338,7 +1339,7 @@ section {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: rgba(27, 42, 74, 0.1);
+  background: rgba(11, 29, 58, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2673,7 +2674,7 @@ textarea {
   display: block;
   font-size: 0.95rem;
   font-weight: 700;
-  color: #d4af37;
+  color: goldenrod;
   margin-bottom: 6px;
   letter-spacing: 0.5px;
 }
@@ -2696,7 +2697,7 @@ textarea {
 }
 
 .page-gallery .gallery-item .gallery-caption .caption-stars {
-  color: #d4af37;
+  color: #0284C7;
   margin-left: 4px;
 }
 
@@ -2771,7 +2772,7 @@ textarea {
   width: 22px;
   height: 22px;
   flex-shrink: 0;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23b8860b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z'/%3E%3Ccircle cx='12' cy='13' r='4'/%3E%3C/svg%3E") center / contain no-repeat;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230369A1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z'/%3E%3Ccircle cx='12' cy='13' r='4'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
 .tourist-experiences .page-gallery {
@@ -2808,8 +2809,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(212, 175, 55, 0.18);
-  border: 1.5px solid rgba(212, 175, 55, 0.45);
+  background-color: rgba(14, 165, 233, 0.18);
+  border: 1.5px solid rgba(14, 165, 233, 0.45);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   background-position: center;
   background-repeat: no-repeat;
@@ -2817,58 +2818,58 @@ textarea {
 }
 
 .tourist-experiences .page-gallery .gallery-item[data-icon="temple"] .caption-icon {
-  background-color: rgba(212, 175, 55, 0.18);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 21h18'/%3E%3Cpath d='M5 21V7l7-4 7 4v14'/%3E%3Cpath d='M9 21v-4h6v4'/%3E%3Cpath d='M9 10h6'/%3E%3C/svg%3E");
+  background-color: rgba(14, 165, 233, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284C7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 21h18'/%3E%3Cpath d='M5 21V7l7-4 7 4v14'/%3E%3Cpath d='M9 21v-4h6v4'/%3E%3Cpath d='M9 10h6'/%3E%3C/svg%3E");
 }
 
 .tourist-experiences .page-gallery .gallery-item[data-icon="palace"] .caption-icon {
-  background-color: rgba(212, 175, 55, 0.18);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 21h18'/%3E%3Cpath d='M6 21V9l6-5 6 5v12'/%3E%3Cpath d='M9 21v-6h6v6'/%3E%3Cpath d='M9 9h6'/%3E%3C/svg%3E");
+  background-color: rgba(14, 165, 233, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284C7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 21h18'/%3E%3Cpath d='M6 21V9l6-5 6 5v12'/%3E%3Cpath d='M9 21v-6h6v6'/%3E%3Cpath d='M9 9h6'/%3E%3C/svg%3E");
 }
 
 .tourist-experiences .page-gallery .gallery-item[data-icon="backwater"] .caption-icon {
-  background-color: rgba(212, 175, 55, 0.18);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12c2-1 4-1 6 0s4 1 6 0 4-1 6 0'/%3E%3Cpath d='M2 17c2-1 4-1 6 0s4 1 6 0 4-1 6 0'/%3E%3Cpath d='M2 7c2-1 4-1 6 0s4 1 6 0 4-1 6 0'/%3E%3C/svg%3E");
+  background-color: rgba(14, 165, 233, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284C7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 12c2-1 4-1 6 0s4 1 6 0 4-1 6 0'/%3E%3Cpath d='M2 17c2-1 4-1 6 0s4 1 6 0 4-1 6 0'/%3E%3Cpath d='M2 7c2-1 4-1 6 0s4 1 6 0 4-1 6 0'/%3E%3C/svg%3E");
 }
 
 .tourist-experiences .page-gallery .gallery-item[data-icon="hills"] .caption-icon {
-  background-color: rgba(212, 175, 55, 0.18);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m8 3 4 8 5-5 5 15H2L8 3z'/%3E%3C/svg%3E");
+  background-color: rgba(14, 165, 233, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284C7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m8 3 4 8 5-5 5 15H2L8 3z'/%3E%3C/svg%3E");
 }
 
 .tourist-experiences .page-gallery .gallery-item[data-icon="coast"] .caption-icon {
-  background-color: rgba(212, 175, 55, 0.18);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='5' r='3'/%3E%3Cpath d='M12 8v2'/%3E%3Cpath d='M4.5 20a7.5 7.5 0 0 1 15 0'/%3E%3Cpath d='M2 20h20'/%3E%3C/svg%3E");
+  background-color: rgba(14, 165, 233, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284C7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='5' r='3'/%3E%3Cpath d='M12 8v2'/%3E%3Cpath d='M4.5 20a7.5 7.5 0 0 1 15 0'/%3E%3Cpath d='M2 20h20'/%3E%3C/svg%3E");
 }
 
 .tourist-experiences .page-gallery .gallery-item[data-icon="adventure"] .caption-icon {
-  background-color: rgba(212, 175, 55, 0.18);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpolygon points='16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76'/%3E%3C/svg%3E");
+  background-color: rgba(14, 165, 233, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284C7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpolygon points='16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76'/%3E%3C/svg%3E");
 }
 
 .tourist-experiences .page-gallery .gallery-item[data-icon="romance"] .caption-icon {
-  background-color: rgba(212, 175, 55, 0.18);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'/%3E%3C/svg%3E");
+  background-color: rgba(14, 165, 233, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284C7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z'/%3E%3C/svg%3E");
 }
 
 .tourist-experiences .page-gallery .gallery-item[data-icon="spiritual"] .caption-icon {
-  background-color: rgba(212, 175, 55, 0.18);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2v4'/%3E%3Cpath d='m6 8 2 2'/%3E%3Cpath d='m18 8-2 2'/%3E%3Cpath d='M4 14h16'/%3E%3Cpath d='M6 18h12'/%3E%3Cpath d='M8 22h8'/%3E%3C/svg%3E");
+  background-color: rgba(14, 165, 233, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284C7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2v4'/%3E%3Cpath d='m6 8 2 2'/%3E%3Cpath d='m18 8-2 2'/%3E%3Cpath d='M4 14h16'/%3E%3Cpath d='M6 18h12'/%3E%3Cpath d='M8 22h8'/%3E%3C/svg%3E");
 }
 
 .tourist-experiences .page-gallery .gallery-item[data-icon="family"] .caption-icon {
-  background-color: rgba(212, 175, 55, 0.18);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='9' cy='7' r='4'/%3E%3Cpath d='M22 21v-2a4 4 0 0 0-3-3.87'/%3E%3Cpath d='M16 3.13a4 4 0 0 1 0 7.75'/%3E%3C/svg%3E");
+  background-color: rgba(14, 165, 233, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284C7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='9' cy='7' r='4'/%3E%3Cpath d='M22 21v-2a4 4 0 0 0-3-3.87'/%3E%3Cpath d='M16 3.13a4 4 0 0 1 0 7.75'/%3E%3C/svg%3E");
 }
 
 .tourist-experiences .page-gallery .gallery-item[data-icon="heritage"] .caption-icon {
-  background-color: rgba(212, 175, 55, 0.18);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/%3E%3C/svg%3E");
+  background-color: rgba(14, 165, 233, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284C7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/%3E%3C/svg%3E");
 }
 
 .tourist-experiences .page-gallery .gallery-item[data-icon="beach"] .caption-icon {
-  background-color: rgba(212, 175, 55, 0.18);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v1'/%3E%3Cpath d='M12 21v-1'/%3E%3Cpath d='M3 12h1'/%3E%3Cpath d='M20 12h1'/%3E%3Cpath d='M5.6 5.6l.7.7'/%3E%3Cpath d='M17.7 17.7l.7.7'/%3E%3Cpath d='M5.6 18.4l.7-.7'/%3E%3Cpath d='M17.7 6.3l.7-.7'/%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3C/svg%3E");
+  background-color: rgba(14, 165, 233, 0.18);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230284C7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v1'/%3E%3Cpath d='M12 21v-1'/%3E%3Cpath d='M3 12h1'/%3E%3Cpath d='M20 12h1'/%3E%3Cpath d='M5.6 5.6l.7.7'/%3E%3Cpath d='M17.7 17.7l.7.7'/%3E%3Cpath d='M5.6 18.4l.7-.7'/%3E%3Cpath d='M17.7 6.3l.7-.7'/%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3C/svg%3E");
 }
 
 .tourist-experiences .page-gallery .caption-title {
@@ -2895,7 +2896,7 @@ textarea {
   font-size: 1.4rem;
   font-style: normal;
   font-weight: 700;
-  color: #d4af37;
+  color: goldenrod;
   line-height: 1;
 }
 
@@ -3051,7 +3052,7 @@ textarea {
   height: 72px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--primary-dark), var(--primary) 65%, var(--luxury) 130%);
-  box-shadow: 0 10px 24px -8px rgba(27, 42, 74, 0.45), inset 0 0 0 1px rgba(251, 191, 36, 0.35);
+  box-shadow: 0 10px 24px -8px rgba(11, 29, 58, 0.45), inset 0 0 0 1px rgba(14, 165, 233, 0.35);
   position: relative;
   transition: transform 0.4s cubic-bezier(.22, .61, .36, 1), box-shadow 0.4s ease;
 }
@@ -3061,7 +3062,7 @@ textarea {
   position: absolute;
   inset: -6px;
   border-radius: 50%;
-  border: 1.5px dashed rgba(251, 191, 36, 0.55);
+  border: 1.5px dashed rgba(14, 165, 233, 0.55);
   opacity: 0;
   transform: scale(0.85);
   transition: opacity 0.4s ease, transform 0.4s ease;
@@ -3077,7 +3078,7 @@ textarea {
 
 .services-offer .glass-card:hover .icon-wrap {
   transform: translateY(-6px) scale(1.08) rotate(-4deg);
-  box-shadow: 0 16px 32px -10px rgba(27, 42, 74, 0.55), inset 0 0 0 1px rgba(251, 191, 36, 0.6);
+  box-shadow: 0 16px 32px -10px rgba(11, 29, 58, 0.55), inset 0 0 0 1px rgba(14, 165, 233, 0.6);
 }
 
 .services-offer .glass-card:hover .icon-wrap::after {
